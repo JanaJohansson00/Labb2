@@ -1,6 +1,6 @@
 function EasterFooter() {
   const changeBackground = () => {
-    const header = document.querySelector('header');
+    const header = document.getElementById('EasterEgg');
     const myColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     header.style.backgroundColor = myColor;
   };

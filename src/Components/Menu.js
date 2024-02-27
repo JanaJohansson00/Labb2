@@ -1,36 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Menu.css';
 const Menu = () => {
   return (
-    <div className="navbar">
+    <div className="navbar" id="EasterEgg">
       <div className="menu-container">
-        <h1>Jana Johansson</h1>
+        <header>
+          <h1>Jana Johansson</h1>
+        </header>
         <ul className="nav-links">
           <li>
-            <Link to="/" className="nav-link">
-              Home
-            </Link>
+            <NavLink to="/" className="nav-link" activeClassName="active">
+              Hem
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
+            <NavLink to="/about" className="nav-link" activeClassName="active">
+              Om mig
+            </NavLink>
           </li>
           <li>
-            <Link to="/cv" className="nav-link">
-              Cv
-            </Link>
+            <NavLink to="/cv" className="nav-link" activeClassName="active">
+              CV
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio" className="nav-link">
+            <NavLink
+              to="/portfolio"
+              className="nav-link"
+              activeClassName="active"
+            >
               Portfolio
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">
-              Contact
-            </Link>
+            <NavLink
+              to="/contact"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Kontakt
+            </NavLink>
           </li>
         </ul>
       </div>

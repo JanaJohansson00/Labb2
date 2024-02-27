@@ -307,25 +307,25 @@ header {
 
 .cv-container {
   display: flex;
-  justify-content: space-between; /* Distribute columns evenly */
-  align-items: flex-start; /* Align items at the start of the container */
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-left: 15%;
 }
 
 .header {
-  margin-bottom: 20px; /* Add space below the header */
+  margin-bottom: 20px;
 }
-.image-container {
-  margin-bottom: 20px; /* Add space below the image */
-}
-.profile-image {
-  width: 200px;
-  height: auto;
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .left-column,
 .right-column {
-  width: 38%; /* Each column takes half of the container width */
+  width: 45%;
+  padding: 20px;
 }
-
 .heading {
   display: inline-block;
   padding: 5px 20px;
@@ -338,15 +338,26 @@ header {
 }
 .profile-image {
   width: 150px;
-  height: 200px;
+  height: auto;
   border-radius: 50%;
-  margin: 25px auto;
+  margin: 15px auto;
   border: 15px groove #f3e2cb;
 }
 ul {
   list-style: none;
 }
+@media screen and (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 /*NEDANFÖR PORTFOLIO-SIDAN*/
 #portfolio-data {
   max-width: 800px;
