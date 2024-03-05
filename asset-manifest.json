@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Labb2/static/css/main.b8ff5ec1.css",
+    "main.js": "/Labb2/static/js/main.c1da959a.js",
+    "static/media/Profile-pic2.png": "/Labb2/static/media/Profile-pic2.fcfaa1b43100ed535fee.png",
+    "static/media/Profile-pic.jpg": "/Labb2/static/media/Profile-pic.3a495351b0eb2e47b9cc.jpg",
+    "index.html": "/Labb2/index.html",
+    "main.b8ff5ec1.css.map": "/Labb2/static/css/main.b8ff5ec1.css.map",
+    "main.c1da959a.js.map": "/Labb2/static/js/main.c1da959a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8ff5ec1.css",
+    "static/js/main.c1da959a.js"
+  ]
+}
